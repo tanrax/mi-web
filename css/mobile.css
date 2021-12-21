@@ -1,0 +1,56 @@
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.hero__header {
+    grid-column: 1 / 3;
+    background-image: url(../img/restaurante.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__title, .hero__text {
+    background-color: var(--color-yellow);
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.hero__price-taco, .hero__price-kombucha {
+    background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.hero__price-text {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.hero__price-title {
+    font-size: 1rem;
+}
+
+/* Menu */
+
+.menu {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Target */
+
+.target-product {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.target-product__texts {
+    align-items: center;
+}
